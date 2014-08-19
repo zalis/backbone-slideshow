@@ -1,0 +1,165 @@
+.slideshow {
+    position: relative;
+    width: 750px;
+	margin: 0 auto;
+	clear: both;
+}
+
+.slides {
+    position: relative;
+    overflow: hidden;
+	width: 100%;
+	height: 250px;
+ 	list-style:none;
+	padding:0;
+	margin:0;
+    border: 1px solid #ccc;
+}
+
+.slides .slide{
+	font-size: 25px;
+}
+
+.slide{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding:0;
+	margin:0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-style: normal;
+	cursor: pointer;
+	display: none;
+}
+
+.thumbnails {
+    position: absolute;
+	width: 180px;
+	height: 50px;
+	border: 1px solid #aaa;
+	z-index: 1000;
+	display: none;
+}
+
+.thumbnails .index{
+    float: left;
+	width: 29px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	border-right: 1px solid #aaa;
+	background-color: #fff;
+}
+
+.thumbnails ul{
+	overflow: hidden;
+	list-style:none;
+	padding:0;
+	margin:0;
+	margin-left: 30px;
+	font-size: 5px;
+}
+
+.thumbnails .slide {
+	position: absolute;
+	width: 150px;
+	height: 50px;
+	padding:0;
+	margin:0;
+	background-color: #000;
+}
+
+.slide img, .slide canvas{
+	position: absolute;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.slide img {
+	height: 250px;
+}
+
+.slide.left img, .slide.left canvas{
+	left: 0;
+}
+
+.slide.right img, .slide.right canvas{
+	right: 0;
+}
+
+.slide .text{
+	position:absolute; 
+	z-index: 200;
+}
+
+.slide.left .text{
+	top:50%; 
+	height:10em; 
+	margin-top:-4em;
+	width: 60%;
+	margin-left: 50%;
+}
+
+.slide.right .text{
+	position:absolute; 
+	top:50%; 
+	height:10em; 
+	margin-top:-4em;
+	width: 60%;
+	margin-left: 5%;
+}
+
+.slide h1{
+	font-size: 120%;
+}
+
+.slide p{
+	font-style: italic !important;
+	font-size: 70%;
+}
+
+.toolbar {
+	position: relative;
+	margin-top: 10px;
+	padding-bottom: 40px;
+}
+
+button {
+	width: 24px;
+	height: 23px;
+	cursor: pointer;
+	border: 1px solid #d3d3d3;
+	border-radius: 4px;
+	background-repeat: no-repeat;
+	background-color: #d3d3d3;
+	background-position: center center;
+	float: left;
+}
+
+button:hover {
+	border-color: #999;
+}
+
+button.play {
+	background-image: url(../img/bg_play.png);
+}
+
+button.play:hover {
+	background-image: url(../img/bg_play_hover.png);
+}
+
+button.pause {
+	background-image: url(../img/bg_pause.png);
+}
+
+button.pause:hover {
+	background-image: url(../img/bg_pause_hover.png);
+}
+
+.toolbar .slider-div {
+	margin-left: 40px;
+	padding-top: 4px;
+}

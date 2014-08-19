@@ -1,0 +1,14 @@
+<ul class="slides">
+	<% _.each(slides, function(slide, i){ %>
+		<li class="slide" data-index="<%= i + 1 %>">id = <%= id %>
+        	<a href="#slideshow/<%= id %>/<%= i + 1 %>">
+     		<p><%= slide.get('title') %></p>
+     		<p><%= slide.get('text') %></p>
+            </a>
+		</li>
+	<% }); %>
+</ul>
+
+
+
+
